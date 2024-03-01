@@ -1,0 +1,6 @@
+go 1.21.7
+
+use (
+	./clase3_4_funciones_pruebas
+	./clase5_estructuras_metodos
+)
