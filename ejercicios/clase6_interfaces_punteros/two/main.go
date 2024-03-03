@@ -1,7 +1,7 @@
 package main
 
 import (
-	"one/products"
+	"two/products"
 )
 
 func main() {
