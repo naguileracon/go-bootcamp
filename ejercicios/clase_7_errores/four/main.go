@@ -29,7 +29,7 @@ func ValidateSalary(salary int) (err error) {
 }
 
 func main() {
-	salary := 160000
+	salary := 200000
 	err := ValidateSalary(salary)
 	var salaryError *SalaryError
 	if errors.As(err, &salaryError) {
