@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3b0d2496-c1ea-4e7a-b300-4fcca43600f8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/.idea/apuntes_de_clase.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-bases-practica/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-bases-practica/.idea/go-bases-practica.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-bases-practica/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-bases-practica/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-bases-practica/1/one.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-bases-practica/2/two.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-bases-practica/3/three.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-bases-practica/4/go.mod.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-bases-practica/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-condicionales/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-condicionales/.idea/go-condicionales.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-condicionales/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-condicionales/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-condicionales/arrays/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-condicionales/for/contador/continue/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-condicionales/for/contador/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-condicionales/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-condicionales/if/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-condicionales/maps/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-condicionales/range/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-condicionales/slices/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-condicionales/switch/fallthrough/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-condicionales/switch/normal/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-condicionales/switch/operation/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-errores/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-errores/.idea/go-funciones.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-errores/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-errores/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-errores/cmd/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-errores/ejercicios/one.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-errores/elipsis/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-errores/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-errores/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-errores/internal/calculator/calculator.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-errores/internal/calculator/calculator_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-errores/internal/calculator/error.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-errores/internal/calculator/orchestrator.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-estructuras-metodos-interfaces/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-estructuras-metodos-interfaces/.idea/go-estructuras-metodos-interfaces.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-estructuras-metodos-interfaces/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-estructuras-metodos-interfaces/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-estructuras-metodos-interfaces/cmd/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-estructuras-metodos-interfaces/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-estructuras-metodos-interfaces/internal/movies.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-estructuras-metodos-interfaces/internal/movies_repository.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-estructuras-metodos-interfaces/internal/repository/movies.maps.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-estructuras-metodos-interfaces/internal/service/default.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-funciones/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-funciones/.idea/go-funciones.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-funciones/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-funciones/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-funciones/cmd/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-funciones/ejercicios/one.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-funciones/elipsis/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-funciones/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-funciones/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-funciones/internal/calculator/calculator.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-funciones/internal/calculator/calculator_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-funciones/internal/calculator/orchestrator.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-interfaces-punteros/bin/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-interfaces-punteros/bin/map/map.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-interfaces-punteros/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-interfaces-punteros/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-interfaces-punteros/lib/logger/local.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-interfaces-punteros/lib/logger/logger.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-interfaces-punteros/lib/logger/txtFile.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-packages/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-packages/.idea/go-packages.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-packages/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-packages/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-packages/code/io/reader/complex/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-packages/code/io/reader/simple/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-packages/code/io/writer/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-packages/code/os/file-read/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-packages/code/os/file-read/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-packages/code/os/file/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-packages/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-panic/index/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-panic/map/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-simple-module/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-simple-module/.idea/go-simple-module.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-simple-module/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-simple-module/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-simple-module/app/bin/cli/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-simple-module/app/bin/exercises/1/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-simple-module/app/bin/exercises/2/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-simple-module/app/bin/script/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-simple-module/app/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-simple-module/app/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-simple-module/app/lib/calculator/addition.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-simple-module/app/lib/calculator/division.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-simple-module/app/lib/calculator/multiplication.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-simple-module/app/lib/calculator/substraction.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-simple-module/app/lib/neuralnet/edges.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apuntes_de_clase/go-simple-module/app/lib/neuralnet/neurons.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/ejercicios.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase3_4_funciones_pruebas/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase3_4_funciones_pruebas/.idea/clase3_4_funciones_pruebas.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase3_4_funciones_pruebas/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase3_4_funciones_pruebas/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase3_4_funciones_pruebas/average_calculator/average_calculator.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase3_4_funciones_pruebas/average_calculator/average_calculator_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase3_4_funciones_pruebas/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase3_4_funciones_pruebas/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase3_4_funciones_pruebas/salaries/salaries.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase3_4_funciones_pruebas/salaries/salaries_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase3_4_funciones_pruebas/statistics/statistics.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase3_4_funciones_pruebas/statistics/statistics_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase5_estructuras_metodos/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase5_estructuras_metodos/.idea/clase5_estructuras_metodos.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase5_estructuras_metodos/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase5_estructuras_metodos/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase5_estructuras_metodos/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase5_estructuras_metodos/one/one.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase5_estructuras_metodos/two/two.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase6_interfaces_punteros/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase6_interfaces_punteros/.idea/clase6_interfaces_punteros.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase6_interfaces_punteros/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase6_interfaces_punteros/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase6_interfaces_punteros/go.work" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase6_interfaces_punteros/one/cmd/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase6_interfaces_punteros/one/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase6_interfaces_punteros/one/repository/students_slice.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase6_interfaces_punteros/one/service/student_default.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase6_interfaces_punteros/one/students.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase6_interfaces_punteros/one/students_repository.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase6_interfaces_punteros/two/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase6_interfaces_punteros/two/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase6_interfaces_punteros/two/products/iProduct.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase6_interfaces_punteros/two/products/products.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase6_interfaces_punteros/two/products/productsFactory.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase_7_errores/four/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase_7_errores/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase_7_errores/one/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase_7_errores/one/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase_7_errores/three/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase_7_errores/three/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase_7_errores/two/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase_7_errores/two/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase_8_panic/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase_8_panic/.idea/clase_8_panic.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase_8_panic/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase_8_panic/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase_8_panic/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase_8_panic/one/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase_8_panic/three/clients.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase_8_panic/three/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase_8_panic/three/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/tickets/service/reader/csv/csv_reader.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/tickets/service/reader/i_reader.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/tickets/service/travel/i_travel.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/tickets/service/travel/travel.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/tickets/service/travel/travel_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/tickets/structure/ticket.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tickets.csv" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file:///opt/homebrew/Cellar/go/1.21.7/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2dHv42mMuxtBCx5MkGJBLTqMdkp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/naguileracon/Desktop/go-bootcamp/ejercicios/desafio-go-bases",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-2946fb9b3188-155fe4b6e3a0-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-233.14475.38" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
