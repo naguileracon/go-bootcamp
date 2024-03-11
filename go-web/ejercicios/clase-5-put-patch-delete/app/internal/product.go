@@ -1,10 +1,22 @@
 package internal
 
-import "errors"
+import (
+	"net/http"
+	"strconv"
+)
+
+type errorResponse struct {
+	Status  string `json:"status"`
+	Message string `json:"message"`
+}
+
+func (e *errorResponse) Error() string {
+	return e.Status + ": " + e.Message
+}
 
 var (
-	ErrCodeValueAlreadyExists = errors.New("code_value already exists")
-	ErrProductNotFound        = errors.New("product not found")
+	ErrCodeValueAlreadyExists = &errorResponse{Status: strconv.Itoa(http.StatusConflict), Message: "code_value already exists"}
+	ErrProductNotFound        = &errorResponse{Status: strconv.Itoa(http.StatusNotFound), Message: "product not found"}
 )
 
 type Product struct {

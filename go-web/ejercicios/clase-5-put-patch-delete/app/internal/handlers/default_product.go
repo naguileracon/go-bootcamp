@@ -9,6 +9,7 @@ import (
 	"github.com/bootcamp-go/web/response"
 	"github.com/go-chi/chi/v5"
 	"io"
+	"io/ioutil"
 	"net/http"
 	"strconv"
 )
@@ -44,6 +45,41 @@ type ProductRequestBody struct {
 
 func (d *DefaultProduct) Create() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
+
+		//validate access token header
+		accessToken := r.Header.Get("ACCESS_TOKEN")
+		//obtain key value from env.json using a library
+
+		// Read the contents of env.json
+		envFile, err := ioutil.ReadFile("env.json")
+		if err != nil {
+			// Handle error reading the file
+			response.JSON(w, http.StatusInternalServerError, map[string]interface{}{"message": "internal server error"})
+			return
+		}
+
+		// Parse the JSON content
+		var envData map[string]interface{}
+		if err := json.Unmarshal(envFile, &envData); err != nil {
+			// Handle error parsing JSON
+			response.JSON(w, http.StatusInternalServerError, map[string]interface{}{"message": "internal server error"})
+			return
+		}
+
+		// Obtain the access token from env.json
+		expectedAccessToken, ok := envData["ACCESS_TOKEN"].(string)
+		if !ok {
+			// Handle the case where the access token is not a string
+			response.JSON(w, http.StatusInternalServerError, map[string]interface{}{"message": "internal server error"})
+			return
+		}
+
+		if accessToken != expectedAccessToken {
+			response.JSON(w, http.StatusUnauthorized, map[string]any{"message": "unauthorized"})
+			return
+		}
+
+		// reading body
 		bytes, err := io.ReadAll(r.Body)
 		if err != nil {
 			response.JSON(w, http.StatusBadRequest, map[string]any{"message": "invalid request body"})
@@ -104,7 +140,7 @@ func (d *DefaultProduct) Create() http.HandlerFunc {
 		if err := d.sv.Save(&product); err != nil {
 			switch {
 			case errors.Is(err, internal.ErrCodeValueAlreadyExists):
-				response.JSON(w, http.StatusInternalServerError, map[string]any{"message": internal.ErrCodeValueAlreadyExists.Error()})
+				response.JSON(w, http.StatusInternalServerError, err)
 			default:
 				response.JSON(w, http.StatusInternalServerError, map[string]any{"message": "internal server error"})
 			}
@@ -135,7 +171,7 @@ func (d *DefaultProduct) GetById() http.HandlerFunc {
 		product, err := d.sv.GetById(productId)
 		if err != nil {
 			if errors.Is(err, internal.ErrProductNotFound) {
-				response.JSON(w, http.StatusNotFound, map[string]any{"message": internal.ErrProductNotFound.Error()})
+				response.JSON(w, http.StatusNotFound, err)
 				return
 			}
 			response.JSON(w, http.StatusInternalServerError, map[string]any{"message": "internal server error"})
@@ -150,6 +186,41 @@ func (d *DefaultProduct) GetById() http.HandlerFunc {
 
 func (d *DefaultProduct) Update() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
+
+		//validate access token header
+		accessToken := r.Header.Get("ACCESS_TOKEN")
+		//obtain key value from env.json using a library
+
+		// Read the contents of env.json
+		envFile, err := ioutil.ReadFile("env.json")
+		if err != nil {
+			// Handle error reading the file
+			response.JSON(w, http.StatusInternalServerError, map[string]interface{}{"message": "internal server error"})
+			return
+		}
+
+		// Parse the JSON content
+		var envData map[string]interface{}
+		if err := json.Unmarshal(envFile, &envData); err != nil {
+			// Handle error parsing JSON
+			response.JSON(w, http.StatusInternalServerError, map[string]interface{}{"message": "internal server error"})
+			return
+		}
+
+		// Obtain the access token from env.json
+		expectedAccessToken, ok := envData["ACCESS_TOKEN"].(string)
+		if !ok {
+			// Handle the case where the access token is not a string
+			response.JSON(w, http.StatusInternalServerError, map[string]interface{}{"message": "internal server error"})
+			return
+		}
+
+		if accessToken != expectedAccessToken {
+			response.JSON(w, http.StatusUnauthorized, map[string]any{"message": "unauthorized"})
+			return
+		}
+
+		// validate request
 
 		id, err := strconv.Atoi(chi.URLParam(r, "id"))
 		if err != nil {
@@ -218,9 +289,10 @@ func (d *DefaultProduct) Update() http.HandlerFunc {
 		if err := d.sv.Update(product); err != nil {
 			switch {
 			case errors.Is(err, internal.ErrCodeValueAlreadyExists):
-				response.JSON(w, http.StatusInternalServerError, map[string]any{"message": internal.ErrCodeValueAlreadyExists.Error()})
+				// map error to json
+				response.JSON(w, http.StatusConflict, err)
 			case errors.Is(err, internal.ErrProductNotFound):
-				response.JSON(w, http.StatusNotFound, map[string]any{"message": internal.ErrProductNotFound.Error()})
+				response.JSON(w, http.StatusNotFound, err)
 			default:
 				response.JSON(w, http.StatusInternalServerError, map[string]any{"message": "internal server error"})
 			}
@@ -247,6 +319,40 @@ func (d *DefaultProduct) Update() http.HandlerFunc {
 
 func (d *DefaultProduct) UpdatePartial() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
+
+		//validate access token header
+		accessToken := r.Header.Get("ACCESS_TOKEN")
+		//obtain key value from env.json using a library
+
+		// Read the contents of env.json
+		envFile, err := ioutil.ReadFile("env.json")
+		if err != nil {
+			// Handle error reading the file
+			response.JSON(w, http.StatusInternalServerError, map[string]interface{}{"message": "internal server error"})
+			return
+		}
+
+		// Parse the JSON content
+		var envData map[string]interface{}
+		if err := json.Unmarshal(envFile, &envData); err != nil {
+			// Handle error parsing JSON
+			response.JSON(w, http.StatusInternalServerError, map[string]interface{}{"message": "internal server error"})
+			return
+		}
+
+		// Obtain the access token from env.json
+		expectedAccessToken, ok := envData["ACCESS_TOKEN"].(string)
+		if !ok {
+			// Handle the case where the access token is not a string
+			response.JSON(w, http.StatusInternalServerError, map[string]interface{}{"message": "internal server error"})
+			return
+		}
+
+		if accessToken != expectedAccessToken {
+			response.JSON(w, http.StatusUnauthorized, map[string]any{"message": "unauthorized"})
+			return
+		}
+
 		id, err := strconv.Atoi(chi.URLParam(r, "id"))
 		if err != nil {
 			response.Text(w, http.StatusBadRequest, "invalid id")
@@ -322,9 +428,9 @@ func (d *DefaultProduct) UpdatePartial() http.HandlerFunc {
 		if err := d.sv.UpdatePartial(id, bodyMap); err != nil {
 			switch {
 			case errors.Is(err, internal.ErrProductNotFound):
-				response.Text(w, http.StatusNotFound, "product not found")
+				response.JSON(w, http.StatusNotFound, err)
 			case errors.Is(err, internal.ErrCodeValueAlreadyExists):
-				response.Text(w, http.StatusBadRequest, "code value already exists")
+				response.JSON(w, http.StatusBadRequest, err)
 			default:
 				response.Text(w, http.StatusInternalServerError, "internal server error")
 			}
@@ -337,6 +443,40 @@ func (d *DefaultProduct) UpdatePartial() http.HandlerFunc {
 
 func (d *DefaultProduct) Delete() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
+
+		//validate access token header
+		accessToken := r.Header.Get("ACCESS_TOKEN")
+		//obtain key value from env.json using a library
+
+		// Read the contents of env.json
+		envFile, err := ioutil.ReadFile("env.json")
+		if err != nil {
+			// Handle error reading the file
+			response.JSON(w, http.StatusInternalServerError, map[string]interface{}{"message": "internal server error"})
+			return
+		}
+
+		// Parse the JSON content
+		var envData map[string]interface{}
+		if err := json.Unmarshal(envFile, &envData); err != nil {
+			// Handle error parsing JSON
+			response.JSON(w, http.StatusInternalServerError, map[string]interface{}{"message": "internal server error"})
+			return
+		}
+
+		// Obtain the access token from env.json
+		expectedAccessToken, ok := envData["ACCESS_TOKEN"].(string)
+		if !ok {
+			// Handle the case where the access token is not a string
+			response.JSON(w, http.StatusInternalServerError, map[string]interface{}{"message": "internal server error"})
+			return
+		}
+
+		if accessToken != expectedAccessToken {
+			response.JSON(w, http.StatusUnauthorized, map[string]any{"message": "unauthorized"})
+			return
+		}
+
 		id, err := strconv.Atoi(chi.URLParam(r, "id"))
 		if err != nil {
 			response.Text(w, http.StatusBadRequest, "invalid id")
@@ -346,7 +486,7 @@ func (d *DefaultProduct) Delete() http.HandlerFunc {
 		if err := d.sv.Delete(id); err != nil {
 			switch {
 			case errors.Is(err, internal.ErrProductNotFound):
-				response.Text(w, http.StatusNotFound, "product not found")
+				response.Text(w, http.StatusNotFound, err.Error())
 			default:
 				response.Text(w, http.StatusInternalServerError, "internal server error")
 			}
