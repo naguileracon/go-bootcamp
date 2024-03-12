@@ -7,8 +7,10 @@ import (
 	"encoding/json"
 	"errors"
 	"github.com/bootcamp-go/web/response"
+	"github.com/go-chi/chi/v5"
 	"io"
 	"net/http"
+	"strconv"
 )
 
 // VehicleRequestBody is a struct that represents a vehicle in JSON format
@@ -174,6 +176,66 @@ func (h *VehicleDefault) Create() http.HandlerFunc {
 		response.JSON(w, http.StatusCreated, map[string]any{
 			"message": "success",
 			"data":    vehicle,
+		})
+	}
+}
+
+func (h *VehicleDefault) UpdateMaxSpeed() http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		// request
+		id, err := strconv.Atoi(chi.URLParam(r, "id"))
+		if err != nil {
+			response.Error(w, http.StatusBadRequest, "Invalid id")
+			return
+		}
+
+		// reading body
+		bytes, err := io.ReadAll(r.Body)
+		if err != nil {
+			response.JSON(w, http.StatusBadRequest, map[string]any{"message": "invalid request vehicle body"})
+			return
+		}
+
+		// -parse to map (dynamic)
+		bodyMap := map[string]any{}
+		if err := json.Unmarshal(bytes, &bodyMap); err != nil {
+			response.JSON(w, http.StatusBadRequest, map[string]any{
+				"message": "invalid request vehicle body",
+			})
+			return
+		}
+
+		// validate required fields
+		requiredFields := []string{"max_speed"}
+		if err := platform.ValidateRequiredFields(bodyMap, requiredFields...); err != nil {
+			response.JSON(w, err.HttpStatusCode, map[string]any{
+				"message": err.ErrorMessage,
+			})
+			return
+		}
+		// process
+		maxSpeed, ok := bodyMap["max_speed"].(float64)
+		if !ok {
+			response.Error(w, http.StatusBadRequest, "Invalid max_speed")
+			return
+		}
+		err = h.sv.UpdateMaxSpeed(id, maxSpeed)
+		if err != nil {
+			var VehicleServiceError *service.VehicleServiceError
+			switch {
+			case errors.As(err, &VehicleServiceError):
+				response.JSON(w, VehicleServiceError.HttpStatusCode, map[string]any{
+					"message": VehicleServiceError.ErrorMessage,
+				})
+			default:
+				response.JSON(w, http.StatusInternalServerError, map[string]any{
+					"message": "internal server error",
+				})
+			}
+			return
+		}
+		response.JSON(w, http.StatusOK, map[string]any{
+			"message": "max speed updated successfully",
 		})
 	}
 }

@@ -41,3 +41,17 @@ func (s *VehicleDefault) Create(v *internal.Vehicle) (err error) {
 	}
 	return
 }
+
+func (s *VehicleDefault) UpdateMaxSpeed(id int, newMaxSpeed float64) (err error) {
+	err = s.rp.UpdateMaxSpeed(id, newMaxSpeed)
+	var r *repository.VehicleRepositoryError
+	if err != nil {
+		switch {
+		case errors.As(err, &r):
+			err = NewVehicleServiceError(r.Error(), r.HttpStatusCode)
+		default:
+			err = NewVehicleServiceError("vehicle service error", http.StatusInternalServerError)
+		}
+	}
+	return
+}

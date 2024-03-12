@@ -43,6 +43,18 @@ func (r *VehicleMap) Create(v *internal.Vehicle) (err error) {
 	return
 }
 
+// UpdateMaxSpeed is a method that updates the max speed of a vehicle
+func (r *VehicleMap) UpdateMaxSpeed(id int, newMaxSpeed float64) (err error) {
+	if !r.vehicleAlreadyExists(id) {
+		err = NewVehicleRepositoryError("vehicle does not exist", http.StatusNotFound)
+		return
+	}
+	vehicle := r.db[id]
+	vehicle.MaxSpeed = newMaxSpeed
+	r.db[id] = vehicle
+	return
+}
+
 // vehicleAlreadyExists is a method that returns true if the vehicle already exists
 // A vehicle already exists if the id is equal to the id of any vehicle in the db
 func (r *VehicleMap) vehicleAlreadyExists(id int) bool {

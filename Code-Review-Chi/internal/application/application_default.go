@@ -74,6 +74,8 @@ func (a *ServerChi) Run() (err error) {
 		rt.Get("/", hd.GetAll())
 		// - POST /vehicles
 		rt.Post("/", hd.Create())
+		// - UPDATE MAX SPEED /vehicles/{id}/max-speed
+		rt.Put("/{id}/max-speed", hd.UpdateMaxSpeed())
 	})
 
 	// run server
