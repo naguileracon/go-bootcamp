@@ -75,7 +75,29 @@ func (a *ServerChi) Run() (err error) {
 		// - POST /vehicles
 		rt.Post("/", hd.Create())
 		// - UPDATE MAX SPEED /vehicles/{id}/max-speed
-		rt.Put("/{id}/max-speed", hd.UpdateMaxSpeed())
+		rt.Patch("/{id}/max-speed", hd.UpdateMaxSpeed())
+		// - CREATE MULTIPLE /vehicles/batch
+		rt.Post("/batch", hd.CreateMultiple())
+		// - GET BY DIMENSIONS /vehicles/dimensions?length={min_length}-{max_length}&width={min_width}-{max_width}
+		rt.Get("/dimensions", hd.GetByDimensions())
+		// - DELETE /vehicles/{id}
+		rt.Delete("/{id}", hd.Delete())
+		// -GET AVERAGE SPEED BY BRAND /vehicles/average-speed/brand/{brand}
+		rt.Get("/average-speed/brand/{brand}", hd.GetAverageSpeedByBrand())
+		// - GET BY BRAND AND RANGE OF YEARS /vehicles/brand/{brand}/between/{start_year}/{end_year}
+		rt.Get("/brand/{brand}/between/{start_year}/{end_year}", hd.GetByBrandAndRangeOfYears())
+		// - GET BY COLOR AND YEAR /vehicles/color/{color}/year/{year}
+		rt.Get("/color/{color}/year/{year}", hd.GetByColorAndYear())
+		// - GET BY FUEL TYPE /vehicles/fuel_type/{type}
+		rt.Get("/fuel_type/{type}", hd.GetByFuelType())
+		// - GET BY TRANSMISSION /vehicles/transmission/{transmission}
+		rt.Get("/transmission/{transmission}", hd.GetByTransmission())
+		// - PATCH Update fuel
+		rt.Patch("/{id}/update_fuel", hd.UpdateFuel())
+		// - GET Average capacity by brand /vehicles/average-capacity/brand/{brand}
+		rt.Get("/average-capacity/brand/{brand}", hd.GetAverageCapacityByBrand())
+		// - GET BY RANGE OF WEIGHT /vehicles/weight?min={min_weight}&max={max_weight}
+		rt.Get("/weight", hd.GetByRangeOfWeight())
 	})
 
 	// run server
